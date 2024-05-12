@@ -1,0 +1,52 @@
+$mainColor: black;
+$mainFontColor: #efc7b0;
+
+$mobileViewSize: 425px;
+$desktopViewSize: 1024px;
+
+@font-face {
+  font-family: chokokutai;
+  src: url("../fonts/Chokokutai/Chokokutai-Regular.ttf");
+}
+
+@font-face {
+  font-family: prata;
+  src: url("../fonts/Prata/Prata-Regular.ttf");
+}
+
+@mixin flex($direction, $justy, $align) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justy;
+  align-items: $align;
+}
+
+.section {
+  width: 100vw;
+  height: 100vh;
+  @include flex(column, center, center);
+  background-color: $mainColor;
+  overflow: hidden;
+  color: $mainFontColor;
+  font-family: chokokutai;
+  scroll-behavior: smooth;
+  ::selection {
+    background-color: red;
+  }
+}
+
+.mainSection {
+  @include flex(column, center, center);
+}
+
+.title {
+  font-size: 9rem;
+  font-family: chokokutai;
+  font-weight: 400;
+}
+
+@media (max-width: $mobileViewSize) {
+  .title {
+    font-size: 3rem;
+  }
+}

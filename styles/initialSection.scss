@@ -1,0 +1,17 @@
+@import "./main.scss";
+
+.initialSection {
+  @extend .section;
+}
+
+.header {
+  @extend .title;
+  padding: 0% 15px;
+  margin: 0px;
+  text-align: center;
+}
+@media (max-width: $mobileViewSize) {
+  .header {
+    font-size: 2rem;
+  }
+}
