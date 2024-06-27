@@ -31,7 +31,7 @@ export default function Home() {
             </Grid>
             <Grid item sm={10}>
               <MainTypography variant="h6" textAlign="center" color="#EFC7B0">
-                Donquix
+                sandy
               </MainTypography>
             </Grid>
           </Grid>
