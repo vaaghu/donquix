@@ -34,7 +34,7 @@
 }
 
 .title, .header {
-  font-size: 9rem;
+  font-size: 5rem;
   font-family: chokokutai;
   font-weight: 400;
 }
@@ -48,10 +48,4 @@
   padding: 0% 15px;
   margin: 0px;
   text-align: center;
-}
-
-@media (max-width: 425px) {
-  .header {
-    font-size: 2rem;
-  }
 }/*# sourceMappingURL=initialSection.css.map */
