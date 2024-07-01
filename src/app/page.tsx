@@ -1,8 +1,9 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
-import { MainTypography } from "@/components";
+"use client";
+
+import { Grid, Typography } from "@mui/material";
+import { CharacterSection, ListSection, MainTypography } from "@/components";
 import { logo, star, arrowLeft } from "@/assets";
 import Image from "next/image";
-
 export default function Home() {
   return (
     <>
@@ -96,7 +97,7 @@ export default function Home() {
           design, and animation.
         </Typography>
       </Grid>
-
+      <CharacterSection />
       <Grid container justifyContent="space-evenly" alignContent="center">
         <Grid item sm={5}>
           <MainTypography variant="h1" color="#EFC7B0">
@@ -133,93 +134,7 @@ export default function Home() {
           </Grid>
         </Grid>
       </Grid>
-
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-evenly"
-        alignContent="center">
-        <Grid
-          container
-          direction="column"
-          justifyContent="space-evenly"
-          alignContent="center"
-          sm={5}>
-          <Grid item sm={2}>
-            <Typography variant="h2" textAlign="center">
-              Highlighted
-            </Typography>
-          </Grid>
-          <Grid
-            container
-            direction="column"
-            justifyContent="space-evenly"
-            alignContent="center"
-            sm={2}>
-            <Grid item>
-              <Typography variant="h4" textAlign="left">
-                Craft
-              </Typography>
-            </Grid>
-            <Grid
-              container
-              direction="column"
-              justifyContent="space-evenly"
-              alignContent="flex-start">
-              <Typography>Creative Direction</Typography>
-              <Typography>Art Direction</Typography>
-              <Typography>Motion Design</Typography>
-              <Typography>Animation</Typography>
-              <Typography>Brand Design</Typography>
-              <Typography>Design Systems</Typography>
-              <Typography>Video Production</Typography>
-              <Typography>Ad films</Typography>
-              <Typography>Web Design & Development</Typography>
-              <Typography>Digital Product Design</Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-
-        <Grid
-          container
-          direction="column"
-          justifyContent="flex-start"
-          alignContent="center"
-          sm={4}>
-          <Grid item sm={2}>
-            <Typography variant="h2" textAlign="center">
-              Capabilities
-            </Typography>
-          </Grid>
-          <Grid
-            container
-            direction="column"
-            justifyContent="space-evenly"
-            alignContent="center"
-            sm={5}>
-            <Grid item>
-              <Typography variant="h4" textAlign="left">
-                Strategy
-              </Typography>
-            </Grid>
-            <Grid
-              container
-              direction="column"
-              justifyContent="space-evenly"
-              alignContent="flex-start">
-              <Typography>Target analysis & segmentation</Typography>
-              <Typography>Brand strategy & positioning</Typography>
-              <Typography>Social media & content strategy</Typography>
-              <Typography>Market analysis</Typography>
-              <Typography>Brand proposition</Typography>
-              <Typography>Influencer marketing</Typography>
-              <Typography>Social media marketing</Typography>
-              <Typography>Media partnership</Typography>
-            </Grid>
-          </Grid>
-        </Grid>
-      </Grid>
-
+      <ListSection />
       <Grid
         container
         direction="column"
