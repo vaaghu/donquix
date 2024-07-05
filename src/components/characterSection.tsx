@@ -1,5 +1,5 @@
-import { character, noise } from "@/assets";
-import { Grid, Typography } from "@mui/material";
+import { buttonBackground, character, noise } from "@/assets";
+import { Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
 export const CharacterSection = () => {
@@ -46,6 +46,73 @@ export const CharacterSection = () => {
           stories, and experiences in the best possible way because who is a
           better storyteller than an artist?
         </Typography>
+        <Button
+          style={{
+            background: "transparent",
+            border: "none",
+            color: "white",
+            width: "172px",
+            height: "60px",
+            position: "absolute",
+            top: "30vw",
+            left: "10vw",
+          }}>
+          <Image
+            style={{
+              position: "absolute",
+              left: "0px",
+              top: "0px",
+              zIndex: 0,
+            }}
+            src={buttonBackground}
+            alt="button_bg"
+          />
+          <Typography
+            style={{
+              color: "#efc7b0",
+              fontSize: "30px",
+              position: "relative",
+              zIndex: 1,
+              margin: "0px",
+              padding: "0px",
+            }}>
+            story
+          </Typography>
+        </Button>
+
+        <Button
+          style={{
+            background: "transparent",
+            border: "none",
+            color: "white",
+            width: "172px",
+            height: "60px",
+            position: "absolute",
+            top: "30vw",
+            right: "10vw",
+          }}>
+          <Image
+            style={{
+              position: "absolute",
+              left: "0px",
+              top: "0px",
+              zIndex: 0,
+            }}
+            src={buttonBackground}
+            alt="button_bg"
+          />
+          <Typography
+            style={{
+              color: "#efc7b0",
+              fontSize: "30px",
+              position: "relative",
+              zIndex: 1,
+              margin: "0px",
+              padding: "0px",
+            }}>
+            story
+          </Typography>
+        </Button>
         <Typography
           color="#EFC7B0"
           style={{

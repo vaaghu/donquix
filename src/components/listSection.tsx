@@ -14,29 +14,31 @@ export const ListSection = () => {
         src={character2}
         alt="character2"
         style={{
-          width: "40vw",
+          width: "39vw",
           height: "auto",
         }}
       />
       <Box
         position="absolute"
-        top="5vw"
-        left="4vw"
+        top="7vw"
+        left="11vw"
         style={{
-          borderBottom: "2px solid",
-          paddingRight: "70px",
-          borderImage: `linear-gradient(to right,#EFC7B0 40%, black) 1`,
+          borderBottom: "1px solid",
+          paddingRight: "100px",
+          paddingLeft: "20px",
+          paddingBottom: "10px",
+          borderImage: `linear-gradient(to right,#EFC7B0 40%, transparent) 1`,
         }}>
         <Typography
           variant="h2"
           textAlign="center"
-          fontSize="5.5vw"
+          fontSize="4vw"
           fontFamily={"chokokutai"}
           color="#EFC7B0">
           Highlighted
         </Typography>
       </Box>
-      <Box position="absolute" top="5vw" left="60vw">
+      <Box position="absolute" top="5vw" left="55vw">
         <Typography
           variant="h2"
           textAlign="center"
@@ -44,9 +46,9 @@ export const ListSection = () => {
           fontFamily="chokokutai"
           color="#EFC7B0"
           style={{
-            borderBottom: "2px solid",
-            paddingLeft: "70px",
-            borderImage: `linear-gradient(to left,#EFC7B0 40%, black) 1`,
+            borderBottom: "1px solid",
+            paddingLeft: "100px",
+            borderImage: `linear-gradient(to left,#EFC7B0 40%, transparent) 1`,
           }}>
           Capabilities
         </Typography>
@@ -102,7 +104,6 @@ export const ListSection = () => {
           direction="column"
           justifyContent="space-evenly"
           alignContent="flex-start"
-          sm={12}
           color="#EFC7B5">
           <Typography variant="h5">Target analysis & segmentation</Typography>
           <Typography variant="h5">Brand strategy & positioning</Typography>
