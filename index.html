@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <title>eye movement</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id="container">
+      <img class="image" id="eyeball" src="./eyeball.svg" />
+      <img class="image" id="pupil" src="./pupil.svg" />
+      <img class="image" id="eye_gif" src="./Eye-Gif.gif" />
+    </div>
+
+    <script>
+      const pupil = document.querySelector("#pupil");
+      const eyeball = document.querySelector("#eyeball");
+      document.body.addEventListener("mousemove", (event) => {
+        let { clientX: x, clientY: y } = event;
+        console.log({
+          x,
+          y,
+          pupil,
+          eyeball,
+        });
+        pupil.style.top =
+          eyeball.offsetTop +
+          ((y / window.innerHeight) *
+            (eyeball.clientHeight - pupil.clientHeight) -
+            (eyeball.clientHeight / 2 - pupil.clientHeight / 2)) *
+            0.3;
+
+        pupil.style.left =
+          eyeball.offsetLeft +
+          (x / window.innerWidth) * (eyeball.clientWidth - pupil.clientWidth) -
+          (eyeball.clientWidth / 2 - pupil.clientWidth / 2);
+      });
+    </script>
+  </body>
+</html>
