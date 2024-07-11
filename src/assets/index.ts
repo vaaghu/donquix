@@ -5,3 +5,5 @@ export * as character from "./character.svg";
 export * as character2 from "./character2.png";
 export * as noise from "./noise.png";
 export * as buttonBackground from "./buttonbackground.svg";
+export * as buttonArrow from "./buttonarrow.svg";
+export * as footerLogo from "./footerLogo.svg";
