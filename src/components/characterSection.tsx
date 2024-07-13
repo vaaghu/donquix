@@ -10,7 +10,8 @@ export const CharacterSection = () => {
         direction="column"
         justifyContent="flex-start"
         alignItems="center"
-        style={{ position: "relative" }}>
+        style={{ position: "relative" }}
+      >
         <Image
           style={{
             zIndex: 1,
@@ -41,7 +42,8 @@ export const CharacterSection = () => {
             fontWeight: 400,
           }}
           variant="h6"
-          textAlign="center">
+          textAlign="center"
+        >
           We are an collective of creative thinkers united to express brands,
           stories, and experiences in the best possible way because who is a
           better storyteller than an artist?
@@ -56,7 +58,8 @@ export const CharacterSection = () => {
             position: "absolute",
             top: "30vw",
             left: "10vw",
-          }}>
+          }}
+        >
           <Image
             style={{
               position: "absolute",
@@ -75,7 +78,8 @@ export const CharacterSection = () => {
               zIndex: 1,
               margin: "0px",
               padding: "0px",
-            }}>
+            }}
+          >
             story
           </Typography>
         </Button>
@@ -90,7 +94,8 @@ export const CharacterSection = () => {
             position: "absolute",
             top: "30vw",
             right: "10vw",
-          }}>
+          }}
+        >
           <Image
             style={{
               position: "absolute",
@@ -109,8 +114,9 @@ export const CharacterSection = () => {
               zIndex: 1,
               margin: "0px",
               padding: "0px",
-            }}>
-            story
+            }}
+          >
+            contact
           </Typography>
         </Button>
         <Typography
@@ -123,7 +129,8 @@ export const CharacterSection = () => {
             fontWeight: 400,
           }}
           variant="h6"
-          textAlign="center">
+          textAlign="center"
+        >
           Design without strategy is mere decoration, yet sometimes off-strategy
           creative ideas can revolutionize a category and drive disruptive
           change.

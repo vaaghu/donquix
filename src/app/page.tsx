@@ -1,8 +1,13 @@
 "use client";
 
 import { Grid, Typography } from "@mui/material";
-import { CharacterSection, ListSection, MainTypography } from "@/components";
-import { logo, star, arrowLeft } from "@/assets";
+import {
+  CharacterSection,
+  ContactSection,
+  ListSection,
+  MainTypography,
+} from "@/components";
+import { logo, star, arrowLeft, footerLogo } from "@/assets";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -11,13 +16,15 @@ export default function Home() {
         container
         direction="row"
         justifyContent="space-between"
-        alignItems="center">
+        alignItems="center"
+      >
         <Grid
           container
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
-          sm={2}>
+          sm={2}
+        >
           <Grid
             container
             sx={{
@@ -26,7 +33,8 @@ export default function Home() {
             direction="row"
             justifyContent="flex-start"
             alignItems="center"
-            sm={6}>
+            sm={6}
+          >
             <Grid item sm={2}>
               <Image src={logo} alt="logo" />
             </Grid>
@@ -41,7 +49,8 @@ export default function Home() {
             direction="row"
             justifyContent="space-evenly"
             alignItems="center"
-            sm={6}>
+            sm={6}
+          >
             <Grid item>
               <Image src={star} alt="star" width={20} height={20} />
             </Grid>
@@ -58,13 +67,15 @@ export default function Home() {
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
-          sm={4}>
+          sm={4}
+        >
           <Grid
             container
             direction="row"
             justifyContent="space-evenly"
             alignItems="center"
-            sm={4}>
+            sm={4}
+          >
             <Grid item>
               <Image src={star} alt="star" width={20} height={20} />
             </Grid>
@@ -80,7 +91,8 @@ export default function Home() {
             sx={{
               borderLeft: "2px #EFC7B0 solid",
             }}
-            sm={8}>
+            sm={8}
+          >
             <MainTypography variant="h6" textAlign="center" color="#EFC7B0">
               uncommon among uncommon
             </MainTypography>
@@ -135,18 +147,24 @@ export default function Home() {
         </Grid>
       </Grid>
       <ListSection />
+      {/* START BUTTON */}
       <Grid
         container
         direction="column"
-        justifyContent="flex-start"
-        alignItems="center">
+        justifyContent="center"
+        alignItems="center"
+        style={{
+          minHeight: "110vh",
+        }}
+      >
         <Grid
           container
           sx={{ border: "1px solid #EFC7B0", p: 5 }}
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
-          sm={9}>
+          sm={9}
+        >
           <Grid item sm={10}>
             <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
               Start a Project
@@ -157,11 +175,19 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="h3" textAlign="center" color="#EFC7B0">
+          <Typography variant="h3" textAlign="center" color="#EFC7B0" mx={10}>
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
           </Typography>
         </Grid>
+      </Grid>
+      <ContactSection />
+      <Grid container justifyContent="center" alignItems="center">
+        <Image
+          src={footerLogo}
+          alt="footerLogo"
+          style={{ width: "88vw", height: "auto" }}
+        />
       </Grid>
     </>
   );
