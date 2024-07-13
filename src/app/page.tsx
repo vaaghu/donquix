@@ -147,11 +147,15 @@ export default function Home() {
         </Grid>
       </Grid>
       <ListSection />
+      {/* START BUTTON */}
       <Grid
         container
         direction="column"
-        justifyContent="flex-start"
+        justifyContent="center"
         alignItems="center"
+        style={{
+          minHeight: "110vh",
+        }}
       >
         <Grid
           container
@@ -171,7 +175,7 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="h3" textAlign="center" color="#EFC7B0">
+          <Typography variant="h3" textAlign="center" color="#EFC7B0" mx={10}>
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
           </Typography>

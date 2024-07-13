@@ -116,7 +116,7 @@ export const CharacterSection = () => {
               padding: "0px",
             }}
           >
-            story
+            contact
           </Typography>
         </Button>
         <Typography

@@ -9,7 +9,8 @@ export const ListSection = () => {
       direction="row"
       justifyContent="center"
       alignContent="center"
-      position="relative">
+      position="relative"
+    >
       <Image
         src={character2}
         alt="character2"
@@ -28,13 +29,15 @@ export const ListSection = () => {
           paddingLeft: "20px",
           paddingBottom: "10px",
           borderImage: `linear-gradient(to right,#EFC7B0 40%, transparent) 1`,
-        }}>
+        }}
+      >
         <Typography
           variant="h2"
           textAlign="center"
           fontSize="4vw"
           fontFamily={"chokokutai"}
-          color="#EFC7B0">
+          color="#EFC7B0"
+        >
           Highlighted
         </Typography>
       </Box>
@@ -49,7 +52,8 @@ export const ListSection = () => {
             borderBottom: "1px solid",
             paddingLeft: "100px",
             borderImage: `linear-gradient(to left,#EFC7B0 40%, transparent) 1`,
-          }}>
+          }}
+        >
           Capabilities
         </Typography>
       </Box>
@@ -63,7 +67,8 @@ export const ListSection = () => {
               color: "black",
               WebkitTextStrokeWidth: "1px",
               WebkitTextStrokeColor: "#EFC7B5",
-            }}>
+            }}
+          >
             Craft
           </Typography>
         </Grid>
@@ -72,17 +77,13 @@ export const ListSection = () => {
           direction="column"
           justifyContent="space-evenly"
           alignContent="flex-end"
-          color="#EFC7B5">
+          color="#EFC7B5"
+        >
           <Typography variant="h5">Creative Direction</Typography>
           <Typography variant="h5">Art Direction</Typography>
+          <Typography variant="h5">Graphic Novel</Typography>
           <Typography variant="h5">Motion Design</Typography>
           <Typography variant="h5">Animation</Typography>
-          <Typography variant="h5">Brand Design</Typography>
-          <Typography variant="h5">Design Systems</Typography>
-          <Typography variant="h5">Video Production</Typography>
-          <Typography variant="h5">Ad films</Typography>
-          <Typography variant="h5">Web Design & Development</Typography>
-          <Typography variant="h5">Digital Product Design</Typography>
         </Grid>
       </Box>
       <Box position="absolute" top="20vw" left="70vw">
@@ -95,7 +96,8 @@ export const ListSection = () => {
               color: "black",
               WebkitTextStrokeWidth: "1px",
               WebkitTextStrokeColor: "#EFC7B5",
-            }}>
+            }}
+          >
             Strategy
           </Typography>
         </Grid>
@@ -104,15 +106,13 @@ export const ListSection = () => {
           direction="column"
           justifyContent="space-evenly"
           alignContent="flex-start"
-          color="#EFC7B5">
-          <Typography variant="h5">Target analysis & segmentation</Typography>
-          <Typography variant="h5">Brand strategy & positioning</Typography>
-          <Typography variant="h5">Social media & content strategy</Typography>
-          <Typography variant="h5">Market analysis</Typography>
-          <Typography variant="h5">Brand proposition</Typography>
-          <Typography variant="h5">Influencer marketing</Typography>
-          <Typography variant="h5">Social media marketing</Typography>
-          <Typography variant="h5">Media partnership</Typography>
+          color="#EFC7B5"
+        >
+          <Typography variant="h5">Brand Design</Typography>
+          <Typography variant="h5">Video Production</Typography>
+          <Typography variant="h5">Ad films</Typography>
+          <Typography variant="h5">Web Design</Typography>
+          <Typography variant="h5">Design System</Typography>
         </Grid>
       </Box>
     </Grid>

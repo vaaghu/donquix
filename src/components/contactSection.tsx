@@ -24,6 +24,9 @@ export const ContactSection = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
+        style={{
+          minHeight: "50vh",
+        }}
       >
         <Grid
           container
@@ -44,6 +47,7 @@ export const ContactSection = () => {
             style={{
               border: "none",
               outline: "none",
+              width: "240px",
               background: "transparent",
               borderBottom: "2px solid wheat",
             }}
