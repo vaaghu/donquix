@@ -1,4 +1,4 @@
-import { buttonBackground, character, noise } from "@/assets";
+import { buttonBackground, character, noise, star } from "@/assets";
 import { Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
@@ -93,7 +93,7 @@ export const CharacterSection = () => {
             height: "60px",
             position: "absolute",
             top: "30vw",
-            right: "10vw",
+            right: "7vw",
           }}
         >
           <Image
@@ -119,6 +119,53 @@ export const CharacterSection = () => {
             contact
           </Typography>
         </Button>
+        <Grid
+          container
+          direction="column"
+          position="absolute"
+          top="392px"
+          left="45px"
+          width="Hug (16px)px"
+          height="Hug (121px)px"
+          gap="35px"
+          justifyContent="space-evenly"
+          alignItems="flex-start"
+          sm={11}
+        >
+          <Grid item>
+            <Image src={star} alt="star" width={20} height={20} />
+          </Grid>
+          <Grid item>
+            <Image src={star} alt="star" width={20} height={20} />
+          </Grid>
+          <Grid item>
+            <Image src={star} alt="star" width={20} height={20} />
+          </Grid>
+        </Grid>
+        <Grid
+          container
+          direction="column"
+          position="absolute"
+          top="392px"
+          left="1360px"
+          width="Hug (16px)px"
+          height="Hug (121px)px"
+          gap="35px"
+          justifyContent="space-evenly"
+          alignItems="flex-start"
+          sm={11}
+        >
+          <Grid item>
+            <Image src={star} alt="star" width={20} height={20} />
+          </Grid>
+          <Grid item>
+            <Image src={star} alt="star" width={20} height={20} />
+          </Grid>
+          <Grid item>
+            <Image src={star} alt="star" width={20} height={20} />
+          </Grid>
+        </Grid>
+
         <Typography
           color="#EFC7B0"
           style={{

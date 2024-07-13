@@ -7,7 +7,7 @@ import {
   ListSection,
   MainTypography,
 } from "@/components";
-import { logo, star, arrowLeft, footerLogo } from "@/assets";
+import { logo, star, arrowLeft, footerLogo, buttonBackground } from "@/assets";
 import Image from "next/image";
 export default function Home() {
   return (
@@ -40,7 +40,7 @@ export default function Home() {
             </Grid>
             <Grid item sm={10}>
               <MainTypography variant="h6" textAlign="center" color="#EFC7B0">
-                sandy
+                Donquix
               </MainTypography>
             </Grid>
           </Grid>
@@ -109,6 +109,20 @@ export default function Home() {
           design, and animation.
         </Typography>
       </Grid>
+      {/* <Image
+        style={{
+          position: "absolute",
+          width: "22px",
+          height: "197px",
+          top: "2326px",
+          left: "50px",
+
+          // left: "0px",
+          // top: "0px",
+        }}
+        src={buttonBackground}
+        alt="button_bg"
+      /> */}
       <CharacterSection />
       <Grid container justifyContent="space-evenly" alignContent="center">
         <Grid item sm={5}>
@@ -175,7 +189,13 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item>
-          <Typography variant="h3" textAlign="center" color="#EFC7B0" mx={10}>
+          <Typography
+            variant="h4"
+            textAlign="center"
+            color="#EFC7B0"
+            mx={21}
+            py={2}
+          >
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
           </Typography>

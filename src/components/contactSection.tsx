@@ -1,22 +1,58 @@
 import { Button, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 import { buttonArrow } from "@/assets";
+import Link from "next/link";
 
 export const ContactSection = () => {
   return (
     <>
-      <Grid container direction="row" justifyContent="space-around" m="2" p="5">
+      <Grid
+        container
+        direction="row"
+        justifyContent="space-around"
+        color="#efc7b0"
+        m="2"
+        p="5"
+        style={{
+          borderTop: "1px solid",
+          paddingTop: "20px",
+
+          borderImage:
+            "linear-gradient(to right, transparent 10%, #EFC7B0 40%, transparent) 1 ",
+        }}
+      >
         <Grid>
           <Typography variant="h5">Behance</Typography>
         </Grid>
         <Grid>
-          <Typography variant="h5">Instagram</Typography>
+          <Typography
+            variant="h5"
+            component={Link}
+            href="https://www.instagram.com/donquix_/ "
+            target="_blank"
+          >
+            Instagram
+          </Typography>
         </Grid>
         <Grid>
-          <Typography variant="h5">LinkedIn</Typography>
+          <Typography
+            variant="h5"
+            component={Link}
+            href="https://www.linkedin.com/in/deekay000/"
+            target="_blank"
+          >
+            LinkedIn
+          </Typography>
         </Grid>
         <Grid>
-          <Typography variant="h5">YouTube</Typography>
+          <Typography
+            variant="h5"
+            component={Link}
+            href="https://youtu.be/Y_ydbeCSMeI?si=NnuTEV4wE_MUNSNn"
+            target="_blank"
+          >
+            YouTube
+          </Typography>
         </Grid>
       </Grid>
       <Grid
@@ -24,6 +60,7 @@ export const ContactSection = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
+        color="#efc7b0"
         style={{
           minHeight: "50vh",
         }}
@@ -49,7 +86,7 @@ export const ContactSection = () => {
               outline: "none",
               width: "240px",
               background: "transparent",
-              borderBottom: "2px solid wheat",
+              borderBottom: "2px solid #efc7b0",
             }}
             placeholder="email address"
           />
