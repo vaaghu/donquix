@@ -58,7 +58,7 @@ export const ListSection = () => {
         </Typography>
       </Box>
       <Box position="absolute" top="20vw" left="15vw">
-        <Grid>
+        {/* <Grid>
           <Typography
             textAlign="left"
             variant="h3"
@@ -71,7 +71,7 @@ export const ListSection = () => {
           >
             Craft
           </Typography>
-        </Grid>
+        </Grid> */}
         <Grid
           container
           direction="column"
@@ -87,7 +87,7 @@ export const ListSection = () => {
         </Grid>
       </Box>
       <Box position="absolute" top="20vw" left="70vw">
-        <Grid item>
+        {/* <Grid item>
           <Typography
             variant="h3"
             textAlign="left"
@@ -97,10 +97,8 @@ export const ListSection = () => {
               WebkitTextStrokeWidth: "1px",
               WebkitTextStrokeColor: "#EFC7B5",
             }}
-          >
-            Strategy
-          </Typography>
-        </Grid>
+          ></Typography>
+        </Grid> */}
         <Grid
           container
           direction="column"
