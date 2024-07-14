@@ -1,114 +1,27 @@
 "use client";
 
-import { Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import {
   CharacterSection,
   ContactSection,
   ListSection,
   MainTypography,
+  TitleSection,
 } from "@/components";
-import { logo, star, arrowLeft, footerLogo } from "@/assets";
+import {
+  logo,
+  star,
+  arrowLeft,
+  landing_page_scribble,
+  footerLogo,
+} from "@/assets";
 import Image from "next/image";
+import { TopNav } from "@/components/topNav";
 export default function Home() {
   return (
     <>
-      <Grid
-        container
-        direction="row"
-        justifyContent="space-between"
-        alignItems="center"
-      >
-        <Grid
-          container
-          direction="row"
-          justifyContent="flex-start"
-          alignItems="center"
-          sm={2}
-        >
-          <Grid
-            container
-            sx={{
-              borderRight: "2px #EFC7B0 solid",
-            }}
-            direction="row"
-            justifyContent="flex-start"
-            alignItems="center"
-            sm={6}
-          >
-            <Grid item sm={2}>
-              <Image src={logo} alt="logo" />
-            </Grid>
-            <Grid item sm={10}>
-              <MainTypography variant="h6" textAlign="center" color="#EFC7B0">
-                sandy
-              </MainTypography>
-            </Grid>
-          </Grid>
-          <Grid
-            container
-            direction="row"
-            justifyContent="space-evenly"
-            alignItems="center"
-            sm={6}
-          >
-            <Grid item>
-              <Image src={star} alt="star" width={20} height={20} />
-            </Grid>
-            <Grid item>
-              <Image src={star} alt="star" width={20} height={20} />
-            </Grid>
-            <Grid item>
-              <Image src={star} alt="star" width={20} height={20} />
-            </Grid>
-          </Grid>
-        </Grid>
-        <Grid
-          container
-          direction="row"
-          justifyContent="flex-start"
-          alignItems="center"
-          sm={4}
-        >
-          <Grid
-            container
-            direction="row"
-            justifyContent="space-evenly"
-            alignItems="center"
-            sm={4}
-          >
-            <Grid item>
-              <Image src={star} alt="star" width={20} height={20} />
-            </Grid>
-            <Grid item>
-              <Image src={star} alt="star" width={20} height={20} />
-            </Grid>
-            <Grid item>
-              <Image src={star} alt="star" width={20} height={20} />
-            </Grid>
-          </Grid>
-          <Grid
-            item
-            sx={{
-              borderLeft: "2px #EFC7B0 solid",
-            }}
-            sm={8}
-          >
-            <MainTypography variant="h6" textAlign="center" color="#EFC7B0">
-              uncommon among uncommon
-            </MainTypography>
-          </Grid>
-        </Grid>
-      </Grid>
-
-      <Grid container justifyContent="center" alignContent="center">
-        <MainTypography variant="h1" color="#EFC7B0">
-          A visionary creative studio
-        </MainTypography>
-        <Typography variant="h4" color="#EFC7B0">
-          that brings brands, stories, and experiences to life through art,
-          design, and animation.
-        </Typography>
-      </Grid>
+      <TopNav />
+      <TitleSection />
       <CharacterSection />
       <Grid container justifyContent="space-evenly" alignContent="center">
         <Grid item sm={5}>
@@ -155,16 +68,14 @@ export default function Home() {
         alignItems="center"
         style={{
           minHeight: "110vh",
-        }}
-      >
+        }}>
         <Grid
           container
           sx={{ border: "1px solid #EFC7B0", p: 5 }}
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
-          sm={9}
-        >
+          sm={9}>
           <Grid item sm={10}>
             <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
               Start a Project
