@@ -17,12 +17,20 @@ import {
 } from "@/assets";
 import Image from "next/image";
 import { TopNav } from "@/components/topNav";
+import { useEffect, useRef, useState } from "react";
 export default function Home() {
+  const [clientX, setClientX] = useState(0);
+  const [clientY, setClientY] = useState(0);
+
   return (
-    <>
+    <section
+      onMouseMove={(event) => {
+        setClientX(event.clientX);
+        setClientY(event.clientY);
+      }}>
       <TopNav />
       <TitleSection />
-      <CharacterSection />
+      <CharacterSection clientX={clientX} clientY={clientY} />
       <Grid container justifyContent="space-evenly" alignContent="center">
         <Grid item sm={5}>
           <MainTypography variant="h1" color="#EFC7B0">
@@ -68,16 +76,14 @@ export default function Home() {
         alignItems="center"
         style={{
           minHeight: "110vh",
-        }}
-      >
+        }}>
         <Grid
           container
           sx={{ border: "1px solid #EFC7B0", p: 5 }}
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
-          sm={9}
-        >
+          sm={9}>
           <Grid item sm={10}>
             <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
               Start a Project
@@ -90,11 +96,10 @@ export default function Home() {
         <Grid item>
           <Typography
             variant="h4"
-            textAlign="center"
+            textAlign="left"
             color="#EFC7B0"
             mx={21}
-            py={2}
-          >
+            py={2}>
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
           </Typography>
@@ -108,6 +113,6 @@ export default function Home() {
           style={{ width: "88vw", height: "auto" }}
         />
       </Grid>
-    </>
+    </section>
   );
 }
