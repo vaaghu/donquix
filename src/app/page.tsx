@@ -17,12 +17,20 @@ import {
 } from "@/assets";
 import Image from "next/image";
 import { TopNav } from "@/components/topNav";
+import { useEffect, useRef, useState } from "react";
 export default function Home() {
+  const [clientX, setClientX] = useState(0);
+  const [clientY, setClientY] = useState(0);
+
   return (
-    <>
+    <section
+      onMouseMove={(event) => {
+        setClientX(event.clientX);
+        setClientY(event.clientY);
+      }}>
       <TopNav />
       <TitleSection />
-      <CharacterSection />
+      <CharacterSection clientX={clientX} clientY={clientY} />
       <Grid container justifyContent="space-evenly" alignContent="center">
         <Grid item sm={5}>
           <MainTypography variant="h1" color="#EFC7B0">
@@ -100,6 +108,6 @@ export default function Home() {
           style={{ width: "88vw", height: "auto" }}
         />
       </Grid>
-    </>
+    </section>
   );
 }
