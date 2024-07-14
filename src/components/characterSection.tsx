@@ -8,7 +8,7 @@ import {
   pupil,
 } from "@/assets";
 import Image from "next/image";
-import React, { MutableRefObject, useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 
 type propType = {
   clientX: number;
@@ -222,14 +222,14 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
         <Grid
           container
           direction="column"
-          position="absolute"
-          top="392px"
-          left="45px"
-          width="Hug (16px)px"
-          height="Hug (121px)px"
           gap="35px"
           justifyContent="space-evenly"
           alignItems="flex-start"
+          style={{
+            position: "absolute",
+            top: "22vw",
+            left: "2vw",
+          }}
           sm={11}>
           <Grid item>
             <Image src={star} alt="star" width={20} height={20} />
@@ -244,14 +244,14 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
         <Grid
           container
           direction="column"
-          position="absolute"
-          top="392px"
-          left="1360px"
-          width="Hug (16px)px"
-          height="Hug (121px)px"
           gap="35px"
           justifyContent="space-evenly"
           alignItems="flex-start"
+          style={{
+            position: "absolute",
+            top: "22vw",
+            left: "96vw",
+          }}
           sm={11}>
           <Grid item>
             <Image src={star} alt="star" width={20} height={20} />
