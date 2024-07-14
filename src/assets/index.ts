@@ -7,6 +7,7 @@ export * as logo from "./logo.svg";
 export * as star from "./star.svg";
 export * as buttonArrow from "./buttonarrow.svg";
 export * as footerLogo from "./footerLogo.svg";
+export * as spark from "./spark.svg";
 
 //png
 export * as landing_page_scribble from "./landing_page_scribble.png";
