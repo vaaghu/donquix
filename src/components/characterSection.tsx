@@ -8,39 +8,39 @@ import {
   pupil,
 } from "@/assets";
 import Image from "next/image";
-import React, { useEffect } from "react";
+import React, { MutableRefObject, useEffect, useRef } from "react";
 
 type propType = {
   clientX: number;
   clientY: number;
 };
 export const CharacterSection = ({ clientX, clientY }: propType) => {
-  const rPupilRef: HTMLElement | null = document.querySelector("#rPupil");
-  const lPupilRef: HTMLElement | null = document.querySelector("#lPupil");
+  const rPupilRef: MutableRefObject<any> = useRef();
+  const lPupilRef: MutableRefObject<any> = useRef();
   useEffect(() => {
-    if (!!rPupilRef) {
-      let rData = rPupilRef.getBoundingClientRect();
+    if (!!rPupilRef.current) {
+      let rData = rPupilRef.current.getBoundingClientRect();
       let distance = getDis(clientX, clientY, rData.x, rData.y);
 
-      rPupilRef.style.top = `${
+      rPupilRef.current.style.top = `${
         34 + (distance.y > 200 ? -2 : distance.y < -200 ? 2 : 0)
       }vw`;
     }
-    if (!!lPupilRef) {
-      let lData = lPupilRef.getBoundingClientRect();
+    if (!!lPupilRef.current) {
+      let lData = lPupilRef.current.getBoundingClientRect();
       let distance = getDis(clientX, clientY, lData.x, lData.y);
-      lPupilRef.style.top = `${
+      lPupilRef.current.style.top = `${
         34.3 + (distance.y > 200 ? -2 : distance.y < -200 ? 2 : 0)
       }vw`;
     }
-    if (!!rPupilRef && !!lPupilRef) {
-      let rData = rPupilRef.getBoundingClientRect();
+    if (!!rPupilRef.current && !!lPupilRef.current) {
+      let rData = rPupilRef.current.getBoundingClientRect();
       let distance = getDis(clientX, clientY, rData.x, rData.y);
-      rPupilRef.style.right = `${
+      rPupilRef.current.style.right = `${
         40 + (distance.x > 200 ? 2 : distance.x < -200 ? -2 : 0)
       }vw`;
 
-      lPupilRef.style.left = `${
+      lPupilRef.current.style.left = `${
         42 + (distance.x > 200 ? -2 : distance.x < -200 ? 2 : 0)
       }vw`;
     }
@@ -98,6 +98,7 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
               transitionDuration: "1s",
             }}
             id="rPupil"
+            ref={rPupilRef}
             src={pupil}
             alt="right pupil"
           />
@@ -113,6 +114,7 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
               transitionDuration: "1s",
             }}
             id="lPupil"
+            ref={lPupilRef}
             src={pupil}
             alt="left pupil"
           />
@@ -163,6 +165,7 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
             top: "30vw",
             left: "10vw",
           }}>
+          s
           <Image
             style={{
               position: "absolute",
