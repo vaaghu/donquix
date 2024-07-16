@@ -9,11 +9,31 @@ export const ThreeStar = ({ direction = "row" }: propType) => {
     <Grid
       container
       direction={direction}
-      justifyContent="space-evenly"
-      alignItems="center">
-      <Image src={star} alt="star" width={20} height={20} />
-      <Image src={star} alt="star" width={20} height={20} />
-      <Image src={star} alt="star" width={20} height={20} />
+      justifyContent="flex-start"
+      alignItems="center"
+      minWidth="150px"
+      maxWidth="50vw">
+      <Image
+        src={star}
+        alt="star"
+        width={20}
+        height={20}
+        style={{ margin: "0px 10px" }}
+      />
+      <Image
+        src={star}
+        alt="star"
+        width={20}
+        height={20}
+        style={{ margin: "0px 10px" }}
+      />
+      <Image
+        src={star}
+        alt="star"
+        width={20}
+        height={20}
+        style={{ margin: "0px 10px" }}
+      />
     </Grid>
   );
 };
