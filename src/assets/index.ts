@@ -5,6 +5,8 @@ export * as logo from "./logo.svg";
 export * as star from "./star.svg";
 export * as buttonArrow from "./buttonarrow.svg";
 export * as footerLogo from "./footerLogo.svg";
+export * as spark from "./spark.svg";
+
 export * as pupil from "./pupil.svg";
 export * as eyeball from "./eyeball.svg";
 //png

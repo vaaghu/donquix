@@ -10,7 +10,8 @@ export const TitleSection = () => {
       container
       justifyContent="center"
       alignContent="center"
-      style={{ minHeight: "25vh" }}>
+      style={{ minHeight: "25vh" }}
+    >
       <MainTypography variant="h1" color="#EFC7B0" textAlign="center" px={4}>
         A visionary creative studio
       </MainTypography>
@@ -24,7 +25,8 @@ export const TitleSection = () => {
         px={4}
         style={{
           marginRight: "100px",
-        }}>
+        }}
+      >
         that brings brands, stories, and experiences to life through art,
         design, and animation.
         <Image

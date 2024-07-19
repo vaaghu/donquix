@@ -1,4 +1,4 @@
-import { character2 } from "@/assets";
+import { character2, spark } from "@/assets";
 import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
 
@@ -22,7 +22,7 @@ export const ListSection = () => {
       <Box
         position="absolute"
         top="7vw"
-        left="11vw"
+        left="8vw"
         style={{
           borderBottom: "1px solid",
           paddingRight: "100px",
@@ -41,37 +41,38 @@ export const ListSection = () => {
           Highlighted
         </Typography>
       </Box>
-      <Box position="absolute" top="5vw" left="55vw">
+      <Box position="absolute" top="7vw" left="55vw">
         <Typography
           variant="h2"
           textAlign="center"
-          fontSize="5.5vw"
+          fontSize="4vw"
           fontFamily="chokokutai"
           color="#EFC7B0"
           style={{
             borderBottom: "1px solid",
-            paddingLeft: "100px",
+            paddingLeft: "140px",
+            paddingBottom: "10px",
+
             borderImage: `linear-gradient(to left,#EFC7B0 40%, transparent) 1`,
           }}
         >
           Capabilities
         </Typography>
       </Box>
-      <Box position="absolute" top="20vw" left="15vw">
-        {/* <Grid>
-          <Typography
-            textAlign="left"
-            variant="h3"
-            fontFamily="chokokutai"
-            style={{
-              color: "black",
-              WebkitTextStrokeWidth: "1px",
-              WebkitTextStrokeColor: "#EFC7B5",
-            }}
-          >
-            Craft
-          </Typography>
-        </Grid> */}
+      <Image
+        src={spark}
+        alt="spark"
+        style={{
+          position: "absolute",
+          width: "34px",
+          height: "34.68px",
+          top: "283px",
+          left: "1062px",
+          border: "1.36px 0px 0px 0px",
+          opacity: "0px",
+        }}
+      />
+      <Box position="absolute" top="23vw" left="15vw">
         <Grid
           container
           direction="column"
@@ -86,19 +87,20 @@ export const ListSection = () => {
           <Typography variant="h5">Animation</Typography>
         </Grid>
       </Box>
-      <Box position="absolute" top="20vw" left="70vw">
-        {/* <Grid item>
-          <Typography
-            variant="h3"
-            textAlign="left"
-            fontFamily="chokokutai"
-            style={{
-              color: "black",
-              WebkitTextStrokeWidth: "1px",
-              WebkitTextStrokeColor: "#EFC7B5",
-            }}
-          ></Typography>
-        </Grid> */}
+      <Image
+        src={spark}
+        alt="spark"
+        style={{
+          position: "absolute",
+          width: "34px",
+          height: "34.68px",
+          top: "283px",
+          right: "1194px",
+          border: "1.36px 0px 0px 0px",
+          opacity: "0px",
+        }}
+      />
+      <Box position="absolute" top="23vw" left="75vw">
         <Grid
           container
           direction="column"
