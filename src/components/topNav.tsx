@@ -1,8 +1,7 @@
 import { Grid, styled, Typography } from "@mui/material";
 import Image from "next/image";
 import { MainTypography, ThreeStar } from ".";
-import { logo, star } from "@/assets";
-import { red } from "@mui/material/colors";
+import { logo } from "@/assets";
 
 const NavBar = styled(Grid)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
