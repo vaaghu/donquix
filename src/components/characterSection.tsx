@@ -55,11 +55,13 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
         direction="column"
         justifyContent="flex-start"
         alignItems="center"
-        style={{ position: "relative" }}>
+        style={{ position: "relative" }}
+      >
         <Box
           style={{
             zIndex: 1,
-          }}>
+          }}
+        >
           <Image
             style={{
               zIndex: -1,
@@ -147,7 +149,8 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
             fontWeight: 400,
           }}
           variant="h6"
-          textAlign="center">
+          textAlign="center"
+        >
           We are an collective of creative thinkers united to express brands,
           stories, and experiences in the best possible way because who is a
           better storyteller than an artist?
@@ -162,7 +165,8 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
             position: "absolute",
             top: "30vw",
             left: "10vw",
-          }}>
+          }}
+        >
           <Image
             style={{
               position: "absolute",
@@ -181,7 +185,8 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
               zIndex: 1,
               margin: "0px",
               padding: "0px",
-            }}>
+            }}
+          >
             story
           </Typography>
         </Button>
@@ -196,7 +201,8 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
             position: "absolute",
             top: "30vw",
             right: "7vw",
-          }}>
+          }}
+        >
           <Image
             style={{
               position: "absolute",
@@ -215,7 +221,8 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
               zIndex: 1,
               margin: "0px",
               padding: "0px",
-            }}>
+            }}
+          >
             contact
           </Typography>
         </Button>
@@ -227,10 +234,11 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
           alignItems="flex-start"
           style={{
             position: "absolute",
-            top: "22vw",
+            top: "27vw",
             left: "2vw",
           }}
-          sm={11}>
+          sm={11}
+        >
           <Grid item>
             <Image src={star} alt="star" width={20} height={20} />
           </Grid>
@@ -249,10 +257,11 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
           alignItems="flex-start"
           style={{
             position: "absolute",
-            top: "22vw",
+            top: "27vw",
             left: "96vw",
           }}
-          sm={11}>
+          sm={11}
+        >
           <Grid item>
             <Image src={star} alt="star" width={20} height={20} />
           </Grid>
@@ -274,7 +283,8 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
             fontWeight: 400,
           }}
           variant="h6"
-          textAlign="center">
+          textAlign="center"
+        >
           Design without strategy is mere decoration, yet sometimes off-strategy
           creative ideas can revolutionize a category and drive disruptive
           change.

@@ -66,8 +66,8 @@ export const ListSection = () => {
           position: "absolute",
           width: "34px",
           height: "34.68px",
-          top: "283px",
-          left: "1062px",
+          top: "20vw",
+          left: "13vw",
           border: "1.36px 0px 0px 0px",
           opacity: "0px",
         }}
@@ -94,8 +94,8 @@ export const ListSection = () => {
           position: "absolute",
           width: "34px",
           height: "34.68px",
-          top: "283px",
-          right: "1194px",
+          top: "20vw",
+          right: "23vw",
           border: "1.36px 0px 0px 0px",
           opacity: "0px",
         }}

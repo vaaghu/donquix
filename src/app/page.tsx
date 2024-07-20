@@ -27,7 +27,8 @@ export default function Home() {
       onMouseMove={(event) => {
         setClientX(event.clientX);
         setClientY(event.clientY);
-      }}>
+      }}
+    >
       <TopNav />
       <TitleSection />
       <CharacterSection clientX={clientX} clientY={clientY} />
@@ -76,14 +77,16 @@ export default function Home() {
         alignItems="center"
         style={{
           minHeight: "110vh",
-        }}>
+        }}
+      >
         <Grid
           container
           sx={{ border: "1px solid #EFC7B0", p: 5 }}
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
-          sm={9}>
+          sm={9}
+        >
           <Grid item sm={10}>
             <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
               Start a Project
@@ -98,8 +101,9 @@ export default function Home() {
             variant="h4"
             textAlign="left"
             color="#EFC7B0"
-            mx={21}
-            py={2}>
+            mx={22}
+            py={2}
+          >
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
           </Typography>
