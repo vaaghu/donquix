@@ -14,6 +14,7 @@ import {
   arrowLeft,
   landing_page_scribble,
   footerLogo,
+  x_mark,
 } from "@/assets";
 import Image from "next/image";
 import { TopNav } from "@/components/topNav";
@@ -51,19 +52,24 @@ export default function Home() {
           justifyContent="flex-start"
           alignItems="center"
           sm={8}>
-          <Grid item sm={9} mx={1}>
-            <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
+          <Grid item sm={10} mx={1}>
+            <MainTypography variant="h2" textAlign="center" color="#EFC7B0">
               Start a Project
             </MainTypography>
           </Grid>
-          <Grid item sm={2} mx={1}>
-            <Image src={arrowLeft} alt="star" width={150} height={150} />
+          <Grid item sm={1} mx={1}>
+            <Image src={arrowLeft} alt="star" width={70} height={70} />
           </Grid>
         </Grid>
-        <Grid item sm={8}>
-          <Typography variant="h4" textAlign="justify" color="#EFC7B0" py={2}>
+        <Grid item sm={7}>
+          <Typography variant="h4" textAlign="justify" color="#EFC7B0" py={1}>
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
+            <Image
+              src={x_mark}
+              alt="x_mark"
+              style={{ transform: "translateY(25px)" }}
+            />
           </Typography>
         </Grid>
       </Grid>
