@@ -87,6 +87,9 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+::-webkit-scrollbar {
+  display: none;
+}
 
 a {
   color: inherit;
