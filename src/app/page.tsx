@@ -18,6 +18,7 @@ import {
 import Image from "next/image";
 import { TopNav } from "@/components/topNav";
 import { useEffect, useRef, useState } from "react";
+import PromiseSection from "@/components/promiseSection";
 export default function Home() {
   const [clientX, setClientX] = useState(0);
   const [clientY, setClientY] = useState(0);
@@ -32,42 +33,7 @@ export default function Home() {
       <TopNav />
       <TitleSection />
       <CharacterSection clientX={clientX} clientY={clientY} />
-      <Grid container justifyContent="space-evenly" alignContent="center">
-        <Grid item sm={5}>
-          <MainTypography variant="h1" color="#EFC7B0">
-            We take ownership. Period.
-          </MainTypography>
-        </Grid>
-        <Grid container sm={5}>
-          <Grid item sm={1}>
-            <Image src={star} alt="star" width={20} height={20} />
-          </Grid>
-          <Grid item sm={11}>
-            <Typography variant="h5" color="#EFC7B0">
-              Your brand’s story is unique, and understanding that story is our
-              first step
-            </Typography>
-          </Grid>
-          <Grid item sm={1}>
-            <Image src={star} alt="star" width={20} height={20} />
-          </Grid>
-          <Grid item sm={11}>
-            <Typography variant="h5" color="#EFC7B0">
-              We are process oriented and quality obsessed people.
-            </Typography>
-          </Grid>
-          <Grid item sm={1}>
-            <Image src={star} alt="star" width={20} height={20} />
-          </Grid>
-          <Grid item sm={11}>
-            <Typography variant="h5" color="#EFC7B0">
-              Nothing lifts our spirit more than creating impactful work so we
-              strive to be more than mere numbers. We give importance to your
-              brand, your product, your target audience, and your competition.
-            </Typography>
-          </Grid>
-        </Grid>
-      </Grid>
+      <PromiseSection />
       <ListSection />
       {/* START BUTTON */}
       <Grid
