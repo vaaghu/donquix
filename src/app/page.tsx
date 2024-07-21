@@ -40,6 +40,7 @@ export default function Home() {
         direction="column"
         justifyContent="center"
         alignItems="center"
+        sm={12}
         style={{
           minHeight: "110vh",
         }}>
@@ -49,23 +50,18 @@ export default function Home() {
           direction="row"
           justifyContent="flex-start"
           alignItems="center"
-          sm={9}>
-          <Grid item sm={10}>
+          sm={8}>
+          <Grid item sm={9} mx={1}>
             <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
               Start a Project
             </MainTypography>
           </Grid>
-          <Grid item sm={2}>
+          <Grid item sm={2} mx={1}>
             <Image src={arrowLeft} alt="star" width={150} height={150} />
           </Grid>
         </Grid>
-        <Grid item>
-          <Typography
-            variant="h4"
-            textAlign="left"
-            color="#EFC7B0"
-            mx={21}
-            py={2}>
+        <Grid item sm={8}>
+          <Typography variant="h4" textAlign="justify" color="#EFC7B0" py={2}>
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
           </Typography>
@@ -76,7 +72,7 @@ export default function Home() {
         <Image
           src={footerLogo}
           alt="footerLogo"
-          style={{ width: "88vw", height: "auto" }}
+          style={{ width: "100vw", height: "auto" }}
         />
       </Grid>
     </section>

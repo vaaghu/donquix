@@ -9,8 +9,7 @@ export const ListSection = () => {
       direction="row"
       justifyContent="center"
       alignContent="center"
-      position="relative"
-    >
+      position="relative">
       <Image
         src={character2}
         alt="character2"
@@ -29,15 +28,13 @@ export const ListSection = () => {
           paddingLeft: "20px",
           paddingBottom: "10px",
           borderImage: `linear-gradient(to right,#EFC7B0 40%, transparent) 1`,
-        }}
-      >
+        }}>
         <Typography
           variant="h2"
           textAlign="center"
           fontSize="4vw"
           fontFamily={"chokokutai"}
-          color="#EFC7B0"
-        >
+          color="#EFC7B0">
           Highlighted
         </Typography>
       </Box>
@@ -54,32 +51,20 @@ export const ListSection = () => {
             paddingBottom: "10px",
 
             borderImage: `linear-gradient(to left,#EFC7B0 40%, transparent) 1`,
-          }}
-        >
+          }}>
           Capabilities
         </Typography>
       </Box>
-      <Image
-        src={spark}
-        alt="spark"
-        style={{
-          position: "absolute",
-          width: "34px",
-          height: "34.68px",
-          top: "283px",
-          left: "1062px",
-          border: "1.36px 0px 0px 0px",
-          opacity: "0px",
-        }}
-      />
       <Box position="absolute" top="23vw" left="15vw">
         <Grid
           container
           direction="column"
           justifyContent="space-evenly"
           alignContent="flex-end"
-          color="#EFC7B5"
-        >
+          color="#EFC7B5">
+          <Typography variant="h5">
+            <Image src={spark} alt="spark" />
+          </Typography>
           <Typography variant="h5">Creative Direction</Typography>
           <Typography variant="h5">Art Direction</Typography>
           <Typography variant="h5">Graphic Novel</Typography>
@@ -87,27 +72,17 @@ export const ListSection = () => {
           <Typography variant="h5">Animation</Typography>
         </Grid>
       </Box>
-      <Image
-        src={spark}
-        alt="spark"
-        style={{
-          position: "absolute",
-          width: "34px",
-          height: "34.68px",
-          top: "283px",
-          right: "1194px",
-          border: "1.36px 0px 0px 0px",
-          opacity: "0px",
-        }}
-      />
+
       <Box position="absolute" top="23vw" left="75vw">
         <Grid
           container
           direction="column"
           justifyContent="space-evenly"
           alignContent="flex-start"
-          color="#EFC7B5"
-        >
+          color="#EFC7B5">
+          <Typography variant="h5">
+            <Image src={spark} alt="spark" />
+          </Typography>
           <Typography variant="h5">Brand Design</Typography>
           <Typography variant="h5">Video Production</Typography>
           <Typography variant="h5">Ad films</Typography>

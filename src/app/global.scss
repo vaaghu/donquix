@@ -116,3 +116,12 @@ a {
     transform: rotateZ(360deg);
   }
 }
+
+* {
+  min-height: 1.4rem;
+  ::placeholder {
+    color: #efc7b5;
+    opacity: 0.5;
+    font-size: 1.4rem;
+  }
+}
