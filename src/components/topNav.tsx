@@ -40,21 +40,24 @@ export const TopNav = () => {
       justifyContent="space-between"
       alignItems="center"
       px={4}
-      mt={4}>
+      mt={4}
+    >
       <LogoPart
         container
         direction="row"
         justifyContent="center"
         alignItems="center"
         xs={4}
-        sm={4}>
+        sm={4}
+      >
         <Grid
           container
           direction="row"
           justifyContent="flex-end"
           alignItems="center"
           xs={6}
-          sm={4}>
+          sm={4}
+        >
           <Grid item>
             <Image src={logo} alt="logo" />
           </Grid>
@@ -67,7 +70,8 @@ export const TopNav = () => {
                 pl: 1,
                 pr: 3,
                 borderRight: "1px #EFC7B0 solid",
-              }}>
+              }}
+            >
               Donquix
             </MainTypography>
           </Grid>
@@ -81,7 +85,8 @@ export const TopNav = () => {
         direction="row"
         justifyContent="center"
         alignItems="center"
-        sm={4}>
+        sm={4}
+      >
         <OneLinerThreeStar sm={3}>
           <ThreeStar direction="row" />
         </OneLinerThreeStar>
@@ -92,7 +97,8 @@ export const TopNav = () => {
           pl={3}
           sx={{
             borderLeft: "1px #EFC7B0 solid",
-          }}>
+          }}
+        >
           uncommon among uncommon
         </OneLiner>
       </Grid>

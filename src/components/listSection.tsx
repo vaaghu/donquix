@@ -1,6 +1,7 @@
 import { character2, spark } from "@/assets";
 import { Box, Grid, Typography } from "@mui/material";
 import Image from "next/image";
+import { ThreeStarV3 } from "./threeStar";
 
 export const ListSection = () => {
   return (
@@ -41,6 +42,12 @@ export const ListSection = () => {
           Highlighted
         </Typography>
       </Box>
+      <ThreeStarV3
+        style={{
+          left: "2vw",
+        }}
+      />
+
       <Box position="absolute" top="7vw" left="55vw">
         <Typography
           variant="h2"
@@ -50,7 +57,8 @@ export const ListSection = () => {
           color="#EFC7B0"
           style={{
             borderBottom: "1px solid",
-            paddingLeft: "140px",
+            paddingRight: "20px",
+            paddingLeft: "135px",
             paddingBottom: "10px",
 
             borderImage: `linear-gradient(to left,#EFC7B0 40%, transparent) 1`,
@@ -59,6 +67,12 @@ export const ListSection = () => {
           Capabilities
         </Typography>
       </Box>
+      <ThreeStarV3
+        style={{
+          left: "75vw",
+        }}
+      />
+
       <Image
         src={spark}
         alt="spark"

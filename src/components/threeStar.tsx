@@ -1,5 +1,11 @@
 import { star } from "@/assets";
-import { Box, Grid, GridDirection, styled } from "@mui/material";
+import {
+  Box,
+  containerClasses,
+  Grid,
+  GridDirection,
+  styled,
+} from "@mui/material";
 import Image from "next/image";
 type propType = {
   direction: GridDirection | undefined;
@@ -18,7 +24,8 @@ export const ThreeStar = ({ direction = "row" }: propType) => {
       justifyContent="flex-start"
       alignItems="center"
       minWidth="150px"
-      maxWidth="50vw">
+      maxWidth="50vw"
+    >
       <Image
         src={star}
         alt="star"
@@ -58,7 +65,36 @@ export const ThreeStarV2 = ({ style }: { style: object }) => {
           top: "27vw",
           ...style,
         }}
-        sm={11}>
+        sm={11}
+      >
+        <Grid item>
+          <Image src={star} alt="star" width={20} height={20} />
+        </Grid>
+        <Grid item>
+          <Image src={star} alt="star" width={20} height={20} />
+        </Grid>
+        <Grid item>
+          <Image src={star} alt="star" width={20} height={20} />
+        </Grid>
+      </Grid>
+    </ThreeStarTempComp>
+  );
+};
+export const ThreeStarV3 = ({ style }: { style: object }) => {
+  return (
+    <ThreeStarTempComp>
+      <Grid
+        container
+        direction="row"
+        gap="20px"
+        justifyContent="start"
+        mx={13}
+        style={{
+          position: "absolute",
+          top: "13vw",
+          ...style,
+        }}
+      >
         <Grid item>
           <Image src={star} alt="star" width={20} height={20} />
         </Grid>
