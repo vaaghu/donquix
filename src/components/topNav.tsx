@@ -44,7 +44,7 @@ export const TopNav = () => {
       <LogoPart
         container
         direction="row"
-        justifyContent="center"
+        justifyContent="flex-start"
         alignItems="center"
         xs={4}
         sm={4}>
