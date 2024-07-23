@@ -32,6 +32,7 @@ export const TitleSection = () => {
       <Description
         variant="h4"
         color="#EFC7B0"
+        fontFamily="gilroy_light"
         position="relative"
         textAlign="center"
         px={4}

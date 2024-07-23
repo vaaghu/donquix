@@ -53,7 +53,10 @@ export const PromiseSection = () => {
           />
         </Grid>
         <Grid item sm={11} xs={11} mb={2}>
-          <CustomParagraph variant="h5" color="#EFC7B0">
+          <CustomParagraph
+            variant="h5"
+            color="#EFC7B0"
+            fontFamily="gilroy_light">
             Your brand’s story is unique, and understanding that story is our
             first step
           </CustomParagraph>
@@ -68,7 +71,10 @@ export const PromiseSection = () => {
           />
         </Grid>
         <Grid item sm={11} xs={11} mb={2}>
-          <CustomParagraph variant="h5" color="#EFC7B0">
+          <CustomParagraph
+            variant="h5"
+            color="#EFC7B0"
+            fontFamily="gilroy_light">
             We are process oriented and quality obsessed people.
           </CustomParagraph>
         </Grid>
@@ -82,7 +88,10 @@ export const PromiseSection = () => {
           />
         </Grid>
         <Grid item sm={11} xs={11} mb={2}>
-          <CustomParagraph variant="h5" color="#EFC7B0">
+          <CustomParagraph
+            variant="h5"
+            color="#EFC7B0"
+            fontFamily="gilroy_light">
             Nothing lifts our spirit more than creating impactful work so we
             strive to be more than mere numbers. We give importance to your
             brand, your product, your target audience, and your competition.

@@ -65,11 +65,21 @@ export const ListSection = () => {
           <Typography variant="h5">
             <Image src={spark} alt="spark" />
           </Typography>
-          <Typography variant="h5">Creative Direction</Typography>
-          <Typography variant="h5">Art Direction</Typography>
-          <Typography variant="h5">Graphic Novel</Typography>
-          <Typography variant="h5">Motion Design</Typography>
-          <Typography variant="h5">Animation</Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Creative Direction
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Art Direction
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Graphic Novel
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Motion Design
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Animation
+          </Typography>
         </Grid>
       </Box>
 
@@ -83,11 +93,21 @@ export const ListSection = () => {
           <Typography variant="h5">
             <Image src={spark} alt="spark" />
           </Typography>
-          <Typography variant="h5">Brand Design</Typography>
-          <Typography variant="h5">Video Production</Typography>
-          <Typography variant="h5">Ad films</Typography>
-          <Typography variant="h5">Web Design</Typography>
-          <Typography variant="h5">Design System</Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Brand Design
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Video Production
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Ad films
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Web Design
+          </Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Design System
+          </Typography>
         </Grid>
       </Box>
     </Grid>

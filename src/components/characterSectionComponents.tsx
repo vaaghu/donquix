@@ -25,6 +25,7 @@ export const Paragraph = ({
       style={{
         position: "absolute",
         top: "50vw",
+        fontFamily: "gilroy_ultrathin",
         width: "25vw",
         fontWeight: 400,
         ...style,
@@ -95,6 +96,7 @@ export const ButtonComp = ({
           color: "#efc7b0",
           fontSize: "30px",
           position: "absolute",
+          fontFamily: "gilroy_light",
           zIndex: 1,
           margin: "0px",
           padding: "0px",

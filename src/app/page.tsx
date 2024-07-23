@@ -62,7 +62,12 @@ export default function Home() {
           </Grid>
         </Grid>
         <Grid item sm={7}>
-          <Typography variant="h4" textAlign="justify" color="#EFC7B0" py={1}>
+          <Typography
+            variant="h4"
+            textAlign="justify"
+            color="#EFC7B0"
+            py={1}
+            fontFamily="gilroy_light">
             That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
             smash!
             <Image

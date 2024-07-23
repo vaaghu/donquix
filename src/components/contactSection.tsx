@@ -21,14 +21,17 @@ export const ContactSection = () => {
             "linear-gradient(to right, transparent 10%, #EFC7B0 40%, transparent) 1 ",
         }}>
         <Grid>
-          <Typography variant="h5">Behance</Typography>
+          <Typography variant="h5" fontFamily="gilroy_light">
+            Behance
+          </Typography>
         </Grid>
         <Grid position="relative" minHeight={"100%"}>
           <Typography
             variant="h5"
             component={Link}
             href="https://www.instagram.com/donquix_/ "
-            target="_blank">
+            target="_blank"
+            fontFamily="gilroy_light">
             Instagram
           </Typography>
 
@@ -39,11 +42,21 @@ export const ContactSection = () => {
             alignItems="flex-start"
             sm={3}
             style={{ position: "absolute", top: "15vh" }}>
-            <Typography variant="h5">Home</Typography>
-            <Typography variant="h5">Story</Typography>
-            <Typography variant="h5">Approach</Typography>
-            <Typography variant="h5">Service</Typography>
-            <Typography variant="h5">Contact</Typography>
+            <Typography variant="h5" fontFamily="gilroy_light">
+              Home
+            </Typography>
+            <Typography variant="h5" fontFamily="gilroy_light">
+              Story
+            </Typography>
+            <Typography variant="h5" fontFamily="gilroy_light">
+              Approach
+            </Typography>
+            <Typography variant="h5" fontFamily="gilroy_light">
+              Service
+            </Typography>
+            <Typography variant="h5" fontFamily="gilroy_light">
+              Contact
+            </Typography>
           </Grid>
         </Grid>
         <Grid position="relative" minHeight={"100%"}>
@@ -51,7 +64,8 @@ export const ContactSection = () => {
             variant="h5"
             component={Link}
             href="https://www.linkedin.com/in/deekay000/"
-            target="_blank">
+            target="_blank"
+            fontFamily="gilroy_light">
             LinkedIn
           </Typography>
 
@@ -80,6 +94,7 @@ export const ContactSection = () => {
                     width: "200px",
                     background: "transparent",
                     borderBottom: "2px solid #efc7b0",
+                    fontFamily: "gilroy_light",
                   }}
                   placeholder="email address"
                 />
@@ -88,10 +103,16 @@ export const ContactSection = () => {
                 </Button>
               </Grid>
               <Grid sm={12}>
-                <Typography marginBottom={2} variant="h5" fontSize="1.4rem">
+                <Typography
+                  marginBottom={2}
+                  variant="h5"
+                  fontSize="1.4rem"
+                  fontFamily="gilroy_light">
                   Subscribe to our newsletter
                 </Typography>
-                <Typography variant="h6">© 2024, Donquix</Typography>
+                <Typography variant="h6" fontFamily="gilroy_light">
+                  © 2024, Donquix
+                </Typography>
               </Grid>
             </Grid>
           </Box>
@@ -101,7 +122,8 @@ export const ContactSection = () => {
             variant="h5"
             component={Link}
             href="https://youtu.be/Y_ydbeCSMeI?si=NnuTEV4wE_MUNSNn"
-            target="_blank">
+            target="_blank"
+            fontFamily="gilroy_light">
             YouTube
           </Typography>
         </Grid>

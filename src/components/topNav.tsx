@@ -88,6 +88,7 @@ export const TopNav = () => {
         <OneLiner
           variant="h6"
           textAlign="right"
+          fontFamily="gilroy_regular"
           color="#EFC7B0"
           pl={3}
           sx={{
