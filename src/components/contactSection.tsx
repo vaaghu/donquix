@@ -1,7 +1,18 @@
-import { Box, Button, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Input, styled, Typography } from "@mui/material";
 import Image from "next/image";
 import { buttonArrow } from "@/assets";
 import Link from "next/link";
+
+const CustomTypography = styled(Typography)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    fontSize: "12px",
+  },
+}));
+const CusInput = styled(Input)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    fontSize: "12px",
+  },
+}));
 
 export const ContactSection = () => {
   return (
@@ -20,19 +31,14 @@ export const ContactSection = () => {
           borderImage:
             "linear-gradient(to right, transparent 10%, #EFC7B0 40%, transparent) 1 ",
         }}>
-        <Grid>
-          <Typography variant="h5" fontFamily="gilroy_light">
-            Behance
-          </Typography>
-        </Grid>
-        <Grid position="relative" minHeight={"100%"}>
+        <Grid item order={{ md: 2 }} position="relative" minHeight={"100%"}>
           <Typography
-            variant="h5"
             component={Link}
             href="https://www.instagram.com/donquix_/ "
-            target="_blank"
-            fontFamily="gilroy_light">
-            Instagram
+            target="_blank">
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
+              Instagram
+            </CustomTypography>
           </Typography>
 
           <Grid
@@ -42,31 +48,31 @@ export const ContactSection = () => {
             alignItems="flex-start"
             sm={3}
             style={{ position: "absolute", top: "15vh" }}>
-            <Typography variant="h5" fontFamily="gilroy_light">
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
               Home
-            </Typography>
-            <Typography variant="h5" fontFamily="gilroy_light">
+            </CustomTypography>
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
               Story
-            </Typography>
-            <Typography variant="h5" fontFamily="gilroy_light">
+            </CustomTypography>
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
               Approach
-            </Typography>
-            <Typography variant="h5" fontFamily="gilroy_light">
+            </CustomTypography>
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
               Service
-            </Typography>
-            <Typography variant="h5" fontFamily="gilroy_light">
+            </CustomTypography>
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
               Contact
-            </Typography>
+            </CustomTypography>
           </Grid>
         </Grid>
-        <Grid position="relative" minHeight={"100%"}>
+        <Grid item order={{ md: 3 }} position="relative" minHeight={"100%"}>
           <Typography
-            variant="h5"
             component={Link}
             href="https://www.linkedin.com/in/deekay000/"
-            target="_blank"
-            fontFamily="gilroy_light">
-            LinkedIn
+            target="_blank">
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
+              LinkedIn
+            </CustomTypography>
           </Typography>
 
           <Box
@@ -79,16 +85,17 @@ export const ContactSection = () => {
               container
               direction="column"
               justifyContent="center"
-              alignItems="center"
+              alignItems="baseline"
               color="#efc7b0"
               sx={{
                 minHeight: "15vh",
               }}
               sm={12}>
               <Grid item sm={12}>
-                <input
+                <Input
                   type="text"
                   style={{
+                    color: "#efc7b0",
                     border: "none",
                     outline: "none",
                     width: "200px",
@@ -102,29 +109,39 @@ export const ContactSection = () => {
                   <Image src={buttonArrow} alt="button" />
                 </Button>
               </Grid>
-              <Grid sm={12}>
-                <Typography
+              <Grid item sm={12}>
+                <CustomTypography
                   marginBottom={2}
                   variant="h5"
                   fontSize="1.4rem"
                   fontFamily="gilroy_light">
                   Subscribe to our newsletter
-                </Typography>
-                <Typography variant="h6" fontFamily="gilroy_light">
+                </CustomTypography>
+                <CustomTypography variant="h6" fontFamily="gilroy_light">
                   © 2024, Donquix
-                </Typography>
+                </CustomTypography>
               </Grid>
             </Grid>
           </Box>
         </Grid>
-        <Grid>
+        <Grid item order={{ md: 1 }}>
           <Typography
-            variant="h5"
             component={Link}
             href="https://youtu.be/Y_ydbeCSMeI?si=NnuTEV4wE_MUNSNn"
-            target="_blank"
-            fontFamily="gilroy_light">
-            YouTube
+            target="_blank">
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
+              Behance
+            </CustomTypography>
+          </Typography>
+        </Grid>
+        <Grid item order={{ md: 4 }}>
+          <Typography
+            component={Link}
+            href="https://youtu.be/Y_ydbeCSMeI?si=NnuTEV4wE_MUNSNn"
+            target="_blank">
+            <CustomTypography variant="h5" fontFamily="gilroy_light">
+              YouTube
+            </CustomTypography>
           </Typography>
         </Grid>
       </Grid>

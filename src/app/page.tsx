@@ -52,12 +52,12 @@ export default function Home() {
           justifyContent="flex-start"
           alignItems="center"
           sm={8}>
-          <Grid item sm={10} mx={1}>
-            <MainTypography variant="h2" textAlign="center" color="#EFC7B0">
+          <Grid item sm={11} xs={11}>
+            <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
               Start a Project
             </MainTypography>
           </Grid>
-          <Grid item sm={1} mx={1}>
+          <Grid item sm={1} xs={11}>
             <Image src={arrowLeft} alt="star" width={70} height={70} />
           </Grid>
         </Grid>

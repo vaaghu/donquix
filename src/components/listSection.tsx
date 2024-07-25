@@ -62,22 +62,37 @@ export const ListSection = () => {
           justifyContent="space-evenly"
           alignContent="flex-end"
           color="#EFC7B5">
-          <Typography variant="h5">
+          <Typography variant="h5" sx={{ lineHeight: "60px" }}>
             <Image src={spark} alt="spark" />
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Creative Direction
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Art Direction
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Graphic Novel
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Motion Design
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Animation
           </Typography>
         </Grid>
@@ -90,22 +105,37 @@ export const ListSection = () => {
           justifyContent="space-evenly"
           alignContent="flex-start"
           color="#EFC7B5">
-          <Typography variant="h5">
+          <Typography variant="h5" sx={{ lineHeight: "60px" }}>
             <Image src={spark} alt="spark" />
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Brand Design
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Video Production
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Ad films
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Web Design
           </Typography>
-          <Typography variant="h5" fontFamily="gilroy_light">
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: "60px" }}>
             Design System
           </Typography>
         </Grid>
