@@ -5,7 +5,35 @@ import Image from "next/image";
 
 const CustomImage = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
-    display: "none",
+    position: "absolute",
+    top: "20vh",
+    right: "0px",
+  },
+}));
+const CustomSparkImage = styled(Typography)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    visibility: "hidden",
+  },
+}));
+const CustomBox = styled(Box)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    position: "static",
+    borderImage: "none",
+    borderBottom: "none",
+    paddingLeft: "10px",
+  },
+}));
+
+const CustomGrid = styled(Grid)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    alignContent: "flex-start",
+  },
+}));
+
+const CustomText = styled(Typography)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    fontSize: "3rem",
+    textAlign: "left",
   },
 }));
 
@@ -13,8 +41,8 @@ export const ListSection = () => {
   return (
     <Grid
       container
-      direction="row"
-      justifyContent="center"
+      direction="column"
+      justifyContent="flex-start"
       alignContent="center"
       position="relative"
       style={{
@@ -30,53 +58,55 @@ export const ListSection = () => {
           }}
         />
       </CustomImage>
-      <Box
+      <CustomBox
         position="absolute"
         top="7vw"
         left="8vw"
-        style={{
+        sx={{
           borderBottom: "1px solid",
           paddingRight: "100px",
           paddingLeft: "20px",
           paddingBottom: "10px",
           borderImage: `linear-gradient(to right,#EFC7B0 40%, transparent) 1`,
         }}>
-        <Typography
+        <CustomText
           variant="h2"
           textAlign="center"
           fontSize="4vw"
           fontFamily={"chokokutai"}
           color="#EFC7B0">
           Highlighted
-        </Typography>
-      </Box>
-      <Box position="absolute" top="7vw" left="55vw">
-        <Typography
+        </CustomText>
+      </CustomBox>
+      <CustomBox
+        position="absolute"
+        top="7vw"
+        left="55vw"
+        sx={{
+          borderBottom: "1px solid",
+          paddingLeft: "140px",
+          paddingBottom: "10px",
+          borderImage: `linear-gradient(to left,#EFC7B0 40%, transparent) 1`,
+        }}>
+        <CustomText
           variant="h2"
           textAlign="center"
           fontSize="4vw"
           fontFamily="chokokutai"
-          color="#EFC7B0"
-          style={{
-            borderBottom: "1px solid",
-            paddingLeft: "140px",
-            paddingBottom: "10px",
-
-            borderImage: `linear-gradient(to left,#EFC7B0 40%, transparent) 1`,
-          }}>
+          color="#EFC7B0">
           Capabilities
-        </Typography>
-      </Box>
-      <Box position="absolute" top="23vw" left="15vw">
-        <Grid
+        </CustomText>
+      </CustomBox>
+      <CustomBox position="absolute" top="23vw" left="15vw">
+        <CustomGrid
           container
           direction="column"
           justifyContent="space-evenly"
           alignContent="flex-end"
           color="#EFC7B5">
-          <Typography variant="h5" sx={{ lineHeight: "60px" }}>
+          <CustomSparkImage variant="h5" sx={{ lineHeight: "60px" }}>
             <Image src={spark} alt="spark" />
-          </Typography>
+          </CustomSparkImage>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
@@ -107,19 +137,19 @@ export const ListSection = () => {
             sx={{ lineHeight: "60px" }}>
             Animation
           </Typography>
-        </Grid>
-      </Box>
+        </CustomGrid>
+      </CustomBox>
 
-      <Box position="absolute" top="23vw" left="75vw">
-        <Grid
+      <CustomBox position="absolute" top="23vw" left="75vw">
+        <CustomGrid
           container
           direction="column"
           justifyContent="space-evenly"
           alignContent="flex-start"
           color="#EFC7B5">
-          <Typography variant="h5" sx={{ lineHeight: "60px" }}>
+          <CustomSparkImage variant="h5" sx={{ lineHeight: "60px" }}>
             <Image src={spark} alt="spark" />
-          </Typography>
+          </CustomSparkImage>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
@@ -150,8 +180,8 @@ export const ListSection = () => {
             sx={{ lineHeight: "60px" }}>
             Design System
           </Typography>
-        </Grid>
-      </Box>
+        </CustomGrid>
+      </CustomBox>
     </Grid>
   );
 };
