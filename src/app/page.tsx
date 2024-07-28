@@ -20,6 +20,7 @@ import Image from "next/image";
 import { TopNav } from "@/components/topNav";
 import { useEffect, useRef, useState } from "react";
 import PromiseSection from "@/components/promiseSection";
+import StartButton from "@/components/startButton";
 export default function Home() {
   const [clientX, setClientX] = useState(0);
   const [clientY, setClientY] = useState(0);
@@ -36,48 +37,7 @@ export default function Home() {
       <PromiseSection />
       <ListSection />
       {/* START BUTTON */}
-      <Grid
-        container
-        direction="column"
-        justifyContent="center"
-        alignItems="center"
-        sm={12}
-        style={{
-          minHeight: "110vh",
-        }}>
-        <Grid
-          container
-          sx={{ border: "1px solid #EFC7B0", p: 5 }}
-          direction="row"
-          justifyContent="flex-start"
-          alignItems="center"
-          sm={8}>
-          <Grid item sm={11} xs={11}>
-            <MainTypography variant="h1" textAlign="center" color="#EFC7B0">
-              Start a Project
-            </MainTypography>
-          </Grid>
-          <Grid item sm={1} xs={11}>
-            <Image src={arrowLeft} alt="star" width={70} height={70} />
-          </Grid>
-        </Grid>
-        <Grid item sm={7}>
-          <Typography
-            variant="h4"
-            textAlign="justify"
-            color="#EFC7B0"
-            py={1}
-            fontFamily="gilroy_light">
-            That{"'"}s a wrap! Hope the button{"'"}s big enough for you to
-            smash!
-            <Image
-              src={x_mark}
-              alt="x_mark"
-              style={{ transform: "translateY(25px)" }}
-            />
-          </Typography>
-        </Grid>
-      </Grid>
+      <StartButton />
       <ContactSection />
       <Grid container justifyContent="center" alignItems="center">
         <Image

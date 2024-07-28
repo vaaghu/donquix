@@ -1,6 +1,13 @@
 import { character2, spark } from "@/assets";
 import { Box, Grid, Typography } from "@mui/material";
+import { styled } from "@mui/system";
 import Image from "next/image";
+
+const CustomImage = styled(Box)(({ theme }) => ({
+  [theme.breakpoints.down("md")]: {
+    display: "none",
+  },
+}));
 
 export const ListSection = () => {
   return (
@@ -9,15 +16,20 @@ export const ListSection = () => {
       direction="row"
       justifyContent="center"
       alignContent="center"
-      position="relative">
-      <Image
-        src={character2}
-        alt="character2"
-        style={{
-          width: "39vw",
-          height: "auto",
-        }}
-      />
+      position="relative"
+      style={{
+        minHeight: "100vh",
+      }}>
+      <CustomImage>
+        <Image
+          src={character2}
+          alt="character2"
+          style={{
+            width: "39vw",
+            height: "auto",
+          }}
+        />
+      </CustomImage>
       <Box
         position="absolute"
         top="7vw"
