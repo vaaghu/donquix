@@ -26,7 +26,15 @@ export const TitleSection = () => {
       justifyContent="center"
       alignContent="center"
       style={{ minHeight: "15vh" }}>
-      <Title variant="h1" color="#EFC7B0" textAlign="center" px={4}>
+      <Title
+        variant="h1"
+        color="#EFC7B0"
+        textAlign="center"
+        px={4}
+        style={{
+          marginTop: "50px",
+          marginBottom: "10px",
+        }}>
         A visionary creative studio
       </Title>
       <Description
@@ -36,6 +44,9 @@ export const TitleSection = () => {
         position="relative"
         textAlign="center"
         px={4}
+        sx={{
+          fontSize: "2rem",
+        }}
         // style={{
         //   marginRight: "100px",
         // }}>

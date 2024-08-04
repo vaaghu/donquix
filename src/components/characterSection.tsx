@@ -44,11 +44,11 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
       let distance = getDis(clientX, clientY, rData.x, rData.y);
 
       lPupilRef.current.style.top = `${
-        34 + (distance.y > 200 ? -2 : distance.y < -200 ? 2 : 0)
+        32 + (distance.y > 200 ? -2 : distance.y < -200 ? 2 : 0)
       }vw`;
 
       rPupilRef.current.style.top = `${
-        34.4 + (distance.y > 200 ? -2 : distance.y < -200 ? 2 : 0)
+        32.4 + (distance.y > 200 ? -2 : distance.y < -200 ? 2 : 0)
       }vw`;
 
       rPupilRef.current.style.right = `${
@@ -74,6 +74,7 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
         <Box
           style={{
             zIndex: 1,
+            marginTop: "15px",
           }}>
           <ButtonComp style={{ left: "10vw" }}>story</ButtonComp>
           <ButtonComp style={{ right: "7vw" }}>contact</ButtonComp>
@@ -85,8 +86,8 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
                 width: "13vw",
                 height: "auto",
                 position: "absolute",
-                top: "30vw",
-                right: "40vw",
+                top: "28vw",
+                right: "39vw",
                 transform: "translateX(+3vw)",
               }}
               src={eyeball}
@@ -98,7 +99,7 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
                 width: "13vw",
                 height: "auto",
                 position: "absolute",
-                top: "30vw",
+                top: "28vw",
                 left: "42vw",
                 transform: "translateX(-4vw)",
               }}
@@ -111,7 +112,7 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
                 width: "5vw",
                 height: "auto",
                 position: "absolute",
-                top: "34.7vw",
+                top: "32.7vw",
                 right: "40vw",
                 transitionDuration: "1s",
               }}
@@ -126,7 +127,7 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
                 width: "5vw",
                 height: "auto",
                 position: "absolute",
-                top: "34vw",
+                top: "32vw",
                 left: "42vw",
                 transitionDuration: "1s",
               }}
@@ -152,18 +153,18 @@ export const CharacterSection = ({ clientX, clientY }: propType) => {
         <Paragraph
           style={{
             left: "5vw",
+            lineHeight: 1.2,
           }}>
-          We are an collective of creative thinkers united to express brands,
-          stories, and experiences in the best possible way because who is a
-          better storyteller than an artist?
+          People may forget what you say, but they'll remember how you made them
+          feel. So, judge us not by our words, but by our work.
         </Paragraph>
         <Paragraph
           style={{
             right: "5vw",
+            lineHeight: 1.2,
           }}>
           Design without strategy is mere decoration, yet sometimes off-strategy
-          creative ideas can revolutionize a category and drive disruptive
-          change.
+          creative ideas can revolutionize and lead to a change.
         </Paragraph>
 
         <ThreeStarV2

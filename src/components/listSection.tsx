@@ -110,32 +110,38 @@ export const ListSection = () => {
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Creative Direction
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Art Direction
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Graphic Novel
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Motion Design
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Animation
+          </Typography>
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
+            Illustration
           </Typography>
         </CustomGrid>
       </CustomBox>
@@ -153,32 +159,38 @@ export const ListSection = () => {
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Brand Design
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Video Production
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Ad films
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Web Design
           </Typography>
           <Typography
             variant="h5"
             fontFamily="gilroy_light"
-            sx={{ lineHeight: "60px" }}>
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
             Design System
+          </Typography>
+          <Typography
+            variant="h5"
+            fontFamily="gilroy_light"
+            sx={{ lineHeight: 2, fontSize: "2.2rem" }}>
+            Product Design
           </Typography>
         </CustomGrid>
       </CustomBox>

@@ -3,6 +3,7 @@ import { Box, Grid, GridDirection, styled } from "@mui/material";
 import Image from "next/image";
 type propType = {
   direction: GridDirection | undefined;
+  style?: object;
 };
 const ThreeStarTempComp = styled(Box)(({ theme }) => ({
   [theme.breakpoints.down("md")]: {
@@ -10,7 +11,7 @@ const ThreeStarTempComp = styled(Box)(({ theme }) => ({
   },
 }));
 
-export const ThreeStar = ({ direction = "row" }: propType) => {
+export const ThreeStar = ({ direction = "row", style = {} }: propType) => {
   return (
     <Grid
       container
@@ -18,7 +19,8 @@ export const ThreeStar = ({ direction = "row" }: propType) => {
       justifyContent="flex-start"
       alignItems="center"
       minWidth="150px"
-      maxWidth="50vw">
+      maxWidth="50vw"
+      style={style}>
       <Image
         src={star}
         alt="star"

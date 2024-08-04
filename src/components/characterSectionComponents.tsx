@@ -24,14 +24,14 @@ export const Paragraph = ({
       color="#EFC7B0"
       style={{
         position: "absolute",
-        top: "50vw",
-        fontFamily: "gilroy_ultrathin",
+        top: "60vw",
+        fontFamily: "gilroy_light",
         width: "25vw",
         fontWeight: 400,
         ...style,
       }}
       variant="h6"
-      textAlign="center">
+      textAlign="left">
       {children}
     </CustomTypography>
   );
@@ -100,7 +100,8 @@ export const ButtonComp = ({
           zIndex: 1,
           margin: "0px",
           padding: "0px",
-        }}>
+        }}
+        sx={{ textTransform: "lowercase" }}>
         {children}
       </Typography>
     </CustomButton>

@@ -1,5 +1,5 @@
 import { arrowLeft, x_mark } from "@/assets";
-import { Grid, styled, Typography } from "@mui/material";
+import { Button, Grid, styled, Typography } from "@mui/material";
 import { MainTypography } from ".";
 import Image from "next/image";
 
@@ -29,24 +29,28 @@ export const StartButton = () => {
       }}>
       <Grid
         container
-        sx={{ border: "1px solid #EFC7B0", px: 5 }}
+        sx={{ border: "1px solid #EFC7B0", p: 5 }}
         direction="row"
-        justifyContent="flex-start"
-        alignItems="center"
+        justifyContent="center"
+        alignItems="flex-end"
         sm={8}
         xs={8}>
-        <Grid item sm={10} xs={10}>
-          <TitleText variant="h1" textAlign="center" color="#EFC7B0">
+        <Grid item sm={11} xs={10}>
+          <TitleText
+            variant="h1"
+            textAlign="center"
+            color="#EFC7B0"
+            sx={{ textTransform: "capitalize" }}>
             Start a Project
           </TitleText>
         </Grid>
-        <Grid item sm={1} xs={1}>
+        <Grid container sm={1} xs={1} alignItems="flex-end">
           <Image
             src={arrowLeft}
             alt="star"
             style={{
-              width: "10vw",
-              height: "10vw",
+              width: "5vw",
+              height: "5vw",
             }}
           />
         </Grid>
@@ -70,7 +74,6 @@ export const StartButton = () => {
             alt="x_mark"
             style={{
               transform: "translateY(25px)",
-              display: "none",
             }}
           />
         </OneLineText>

@@ -65,8 +65,10 @@ export const TopNav = () => {
               color="#EFC7B0"
               sx={{
                 pl: 1,
-                pr: 3,
                 borderRight: "1px #EFC7B0 solid",
+              }}
+              style={{
+                paddingRight: "10px",
               }}>
               Donquix
             </MainTypography>
@@ -79,11 +81,16 @@ export const TopNav = () => {
       <Grid
         container
         direction="row"
-        justifyContent="center"
+        justifyContent="flex-end"
         alignItems="center"
         sm={4}>
-        <OneLinerThreeStar sm={3}>
-          <ThreeStar direction="row" />
+        <OneLinerThreeStar>
+          <ThreeStar
+            direction="row"
+            style={{
+              justifyContent: "flex-end",
+            }}
+          />
         </OneLinerThreeStar>
         <OneLiner
           variant="h6"
@@ -93,6 +100,9 @@ export const TopNav = () => {
           pl={3}
           sx={{
             borderLeft: "1px #EFC7B0 solid",
+          }}
+          style={{
+            paddingLeft: "10px",
           }}>
           uncommon among uncommon
         </OneLiner>

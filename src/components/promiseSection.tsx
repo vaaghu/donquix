@@ -38,25 +38,33 @@ export const PromiseSection = () => {
           variant="h1"
           color="#EFC7B0"
           style={{ lineHeight: "150%" }}
-          textAlign="center">
+          textAlign="left">
           We take ownership. Period.
         </CustomHeader>
       </Grid>
-      <Grid container sm={5} p={5}>
+      <Grid container sm={4.5} p={5}>
         <Grid item sm={1} xs={1}>
           <Image
             src={star}
             alt="star"
             width={20}
             height={20}
-            style={{ transform: "rotatez(45deg)" }}
+            style={{
+              marginTop: "1px",
+              width: "1.55rem",
+              height: "1.55rem",
+              transform: "rotatez(45deg)",
+            }}
           />
         </Grid>
-        <Grid item sm={11} xs={11} mb={2}>
+        <Grid item sm={11} xs={11} mb={4}>
           <CustomParagraph
             variant="h5"
             color="#EFC7B0"
-            fontFamily="gilroy_light">
+            fontFamily="gilroy_regular"
+            sx={{
+              fontSize: "1.55rem",
+            }}>
             Your brand’s story is unique, and understanding that story is our
             first step
           </CustomParagraph>
@@ -67,14 +75,22 @@ export const PromiseSection = () => {
             alt="star"
             width={20}
             height={20}
-            style={{ transform: "rotatez(45deg)" }}
+            style={{
+              marginTop: "1px",
+              width: "1.55rem",
+              height: "1.55rem",
+              transform: "rotatez(45deg)",
+            }}
           />
         </Grid>
-        <Grid item sm={11} xs={11} mb={2}>
+        <Grid item sm={11} xs={11} mb={4}>
           <CustomParagraph
             variant="h5"
             color="#EFC7B0"
-            fontFamily="gilroy_light">
+            fontFamily="gilroy_regular"
+            sx={{
+              fontSize: "1.55rem",
+            }}>
             We are process oriented and quality obsessed people.
           </CustomParagraph>
         </Grid>
@@ -84,14 +100,22 @@ export const PromiseSection = () => {
             alt="star"
             width={20}
             height={20}
-            style={{ transform: "rotatez(45deg)" }}
+            style={{
+              marginTop: "1px",
+              width: "1.55rem",
+              height: "1.55rem",
+              transform: "rotatez(45deg)",
+            }}
           />
         </Grid>
-        <Grid item sm={11} xs={11} mb={2}>
+        <Grid item sm={11} xs={11} mb={4}>
           <CustomParagraph
             variant="h5"
             color="#EFC7B0"
-            fontFamily="gilroy_light">
+            fontFamily="gilroy_regular"
+            sx={{
+              fontSize: "1.55rem",
+            }}>
             Nothing lifts our spirit more than creating impactful work so we
             strive to be more than mere numbers. We give importance to your
             brand, your product, your target audience, and your competition.
