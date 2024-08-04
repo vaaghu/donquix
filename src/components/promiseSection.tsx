@@ -31,8 +31,11 @@ export const PromiseSection = () => {
       container
       justifyContent="space-evenly"
       alignContent="center"
-      minHeight="100vh"
-      px={15}>
+      minHeight="65vh"
+      px={15}
+      sx={{
+        marginBottom: "20vh",
+      }}>
       <Grid item sm={5}>
         <CustomHeader
           variant="h1"
